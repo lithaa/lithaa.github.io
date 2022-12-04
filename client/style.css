@@ -1,0 +1,152 @@
+* {
+    cursor: url("./assets/dolphin_sansBG.png") }
+
+body {
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    background: url("./assets/arctic_bg1.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "montserrat";
+    font-weight: 100;
+    color: rgb(70, 41, 188);
+
+
+}
+
+.lithaImg_containerPhone, .lithaImgPhone {
+    display:none
+}
+
+
+.lithaContact {
+    text-decoration: none;
+    color:black;
+}
+
+/* .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 110vw;
+    z-index: -1;
+}  */
+
+.main {
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left, .right {
+    overflow: scroll;
+    padding: 10px;
+    display: grid;
+}
+
+.right {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.lithaName {
+    font-weight: 100;
+    color: #5C9D98;
+    font-size: 1.5em;
+}
+
+.lithaImg_container {
+  border: 2px solid white;
+  border-radius: 50%;
+    width: 333px;
+    height: 500px;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    overflow: hidden;
+}
+
+.left {
+    font-size: 1em;
+}
+
+.lithaImg {
+    width: 333px;
+    align-self: center;
+}
+
+@media screen and (max-width: 950px) {
+.lithaImg_container {
+    width: 250px;
+    height: 375px;
+}
+
+.left {
+    font-size: .9em;
+}
+
+.lithaImg {
+    width: 250px;
+}
+}
+
+@media screen and (max-width: 800px) {
+    .left {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .lithaImg_container, .lithaImg {
+    display:none
+
+    }
+    .lithaImg_containerPhone {
+        display: grid;
+        overflow: hidden;
+        justify-self: center;
+border: 2px solid white;
+border-radius: 50%;
+        width: 200px;
+    height: 300px;
+    margin-top: 10px;
+        }
+.lithaImgPhone {
+    display: block;
+    width: 200px;
+}
+
+.main {
+    grid-template-columns: 2.5fr 1fr;
+    overflow-x: hidden;
+
+}
+    .lithaImg {
+        width: 200px;
+    }
+
+    .right {
+        overflow-x: hidden;
+    }
+
+    .lithaName {
+        font-size: 1.2em;
+    }
+
+    .lithaContact {
+        font-size: .9em;
+    }
+
+  
+    
+
+}
