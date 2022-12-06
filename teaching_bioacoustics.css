@@ -1,0 +1,28 @@
+* {
+    cursor: url("./assets/dolphin_sansBG.png") }
+
+body {
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    background: url("./assets/arctic_bg1.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "montserrat";
+    font-weight: 100;
+    color: rgb(70, 41, 188);
+    display: grid;
+}
+
+.imageContainer {
+    justify-self: center;
+    align-self: center;
+}
+
+.bioacoustics_image {
+    max-height: 90vh;
+    border: 8px solid rgb(178, 133, 255);
+    border-radius:30px;
+}
